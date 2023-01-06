@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Registar Form with Bootstrap | Crimson</title>
+</head>
+<body>
+    <div class="container">
+  <div class="row"><img src="https://iephosting.com/app/views/client/bootstrap/images/graphic8.svg" id="imageAsBackground" alt="" /></div>
+  <div class="row align-items-center justify-content-center" style="height:100vh;">
+    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="form-icon">
+            <div class="icon-holder">
+              <i class="fa-2x fa-solid fa-user-plus text-light" style="margin-top: 5px;"></i>
+            </div>
+          </div>
+          <h3 class="text-center">REGISTER</h3>
+          <form id="registerForm">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="userInput" placeholder="Input your Username" autocomplete="off" name="username" required>
+              <label for="userInput">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="emailInput" placeholder="Input your email" autocomplete="off" name="email" required>
+              <label for="emailInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="nameInput" placeholder="Input your Name" autocomplete="off" name="name" required>
+              <label for="nameInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="passwordInput" name="password" placeholder="Input your password" required>
+              <label for="passwordInput">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="cpasswordInput" name="cpassword" placeholder="Input your password" required>
+              <label for="cpasswordInput">Confirm Password</label>
+            </div>
+
+            <div class="text-center mb-5">
+              <button class="btn btn-outline-primary" type="submit">REGISTER</button>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-center">
+          <button class="btn btn-sm btn-primary radius" data-bs-toggle="modal" data-bs-target="#staticBackdrop">See List of Accounts</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="staticBackdrop">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">List of registered accounts</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="table-responsive">
+          <table id="accountTable" class="table table-striped" style="width:100%">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Password</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

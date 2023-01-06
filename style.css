@@ -1,0 +1,79 @@
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+}
+
+.radius {
+  border-radius: 20px !important;
+}
+
+.card {
+  border-radius: 20px !important;
+}
+.card-body .form-icon {
+  text-align: center;
+  width: 100%;
+  line-height: 0;
+  margin-top: calc(-42px - 35px);
+  margin-bottom: 28px;
+}
+.form-icon .icon-holder {
+  position: relative;
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  border-radius: 85px;
+  background-color: #292828;
+  padding: 20px;
+  margin-top: 15px;
+}
+.icon-holder img {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  margin-top: -23%;
+  margin-left: -25%;
+}
+input:hover {
+  border-bottom: 1px solid #292828;
+}
+#imageAsBackground {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  right: -1%;
+  transform: translateY(-50%);
+  max-height: 600px;
+}
+a:hover {
+  text-decoration: none;
+}
+.form-control:focus {
+  border-color: #292828;
+  box-shadow: none;
+}
+
+.form-control.is-invalid {
+  background-image: none;
+}
+.form-control.is-invalid:focus {
+  box-shadow: 0 3px 2px -2px red;
+}
+.pass {
+  float: right;
+  margin-right: 15px;
+  margin-top: -35px;
+  position: relative;
+  z-index: 5;
+  font-size: 18px;
+}
+
+.masked {
+  -webkit-text-security: disc;
+}
+
+.tablepass {
+  margin-left: 5px;
+}
